@@ -5,8 +5,12 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     //script(src='https://browser.plumbr.io/pa.js', crossorigin='anonymous', data-plumbr='{ "accountId":"3cj3jd279pgk868hlrbd5mg0nk", "appName":"jsErrorTest", "serverUrl":"https://bdr.plumbr.io" }')
 
-    script(src="https://browser.sentry-cdn.com/4.2.4/bundle.min.js", crossorigin="anonymous")
-    script Sentry.init({ dsn: 'https://1137c2c709e04836a89fd7b3b3a11566@sentry.io/1316062' })
+    script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")
+    script.
+      TrackJS.install({ 
+        token: "9d8ebe0f801843c6af1094d1de225827"
+        // for more configuration options, see https://docs.trackjs.com
+      });
 
   body
     block content
