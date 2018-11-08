@@ -10,6 +10,10 @@ router.get('/browserdif', function(req, res, next) {
   res.render('browserdif', { title: 'Dif' });
 });
 
+router.get('/browserdif-alt', function(req, res, next) {
+  res.render('browserdif', { title: 'Dif' });
+});
+
 router.get('/res-code-0', function(req, res, next) {
   res.render('rescode0', { title: 'Dif' });
 });
